@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://example.com/books-1.0"
+           xmlns:bks="https://example.com/books-1.0"
+           elementFormDefault="qualified">
+
+    <xs:element name="Book">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Title" type="xs:string"/>
+                <xs:element name="Author" type="xs:string"/>
+                <xs:element name="ISBN" minOccurs="0" type="xs:string"/>
+                <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

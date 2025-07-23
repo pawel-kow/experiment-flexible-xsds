@@ -1,0 +1,56 @@
+FILE: book-1.0-fail.xml
+{
+  "book-1.0": "FAIL",
+  "book-1.1": "FAIL",
+  "book-1.2": "FAIL"
+}
+
+FILE: book-1.0-good.xml
+{
+  "book-1.0": "SUCCESS",
+  "book-1.1": "SUCCESS",
+  "book-1.2": "SUCCESS"
+}
+
+FILE: book-1.1-fail.xml
+{
+  "book-1.0": "FAIL",
+  "book-1.1": "FAIL",
+  "book-1.2": "FAIL"
+}
+
+FILE: book-1.1-good.xml
+{
+  "book-1.0": "SUCCESS",
+  "book-1.1": "SUCCESS",
+  "book-1.2": "SUCCESS"
+}
+
+FILE: book-1.2-error.xml
+{
+  "book-1.0": "FAIL",
+  "book-1.1": "FAIL",
+  "book-1.2": "FAIL"
+}
+
+FILE: book-1.2-fail-in-1.2-element.xml
+{
+  "book-1.0": "SUCCESS",
+  "book-1.1": "SUCCESS",
+  "book-1.2": "FAIL"
+}
+
+FILE: book-1.2-good-1.2-only.xml
+{
+  "book-1.0": "SUCCESS",
+  "book-1.1": "SUCCESS",
+  "book-1.2": "SUCCESS"
+}
+
+FILE: book-1.2-good.xml
+{
+  "book-1.0": "SUCCESS",
+  "book-1.1": "SUCCESS",
+  "book-1.2": "SUCCESS"
+}
+

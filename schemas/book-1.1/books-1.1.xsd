@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://example.com/books-1.1"
+           xmlns:bks="https://example.com/books-1.1"
+           elementFormDefault="qualified">
+
+    <xs:element name="foo" type="xs:string"/>
+</xs:schema>

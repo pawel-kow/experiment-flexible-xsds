@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://example.com/books-1.0"
+           xmlns:bks="https://example.com/books-1.0"
+           xmlns:books-1.1="https://example.com/books-1.1"
+           xmlns:books-1.2="https://example.com/books-1.2"
+           elementFormDefault="qualified">
+
+    <xs:import namespace="https://example.com/books-1.1" schemaLocation="books-1.1.xsd" />
+    <xs:import namespace="https://example.com/books-1.2" schemaLocation="books-1.2.xsd" />
+
+    <xs:element name="Book">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Title" type="xs:string"/>
+                <xs:element name="Author" type="xs:string"/>
+                <xs:element name="ISBN" minOccurs="0" type="xs:string"/>
+                <xs:element ref="books-1.1:foo" minOccurs="0" />
+                <xs:element ref="books-1.2:bar" minOccurs="0" />
+                <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

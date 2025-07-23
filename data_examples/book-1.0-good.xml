@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Book
+  xmlns="https://example.com/books-1.0">
+  <Title>The Art of Simplicity</Title>
+  <Author>Jane Doe</Author>
+</Book>
